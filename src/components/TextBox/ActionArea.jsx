@@ -18,11 +18,6 @@ const ActionArea = () => {
   const { setMessage } = useContext(Message.Context);
   const { action, setAction } = useContext(Action.Context);
 
-  // const goMap = () => {
-  //   setViewerState("map");
-  //   setMessage("map");
-  // };
-
   const makeButtons = () => {
     if (!action) return <></>;
     return action.map((a, i) => (
@@ -39,15 +34,6 @@ const ActionArea = () => {
     ));
   };
 
-  // const buttons = [
-  //   <Button key="btn_1" onClick={() => console.log(viewerState)}>
-  //     yes
-  //   </Button>,
-  //   <Button key="btn_2">no</Button>,
-  //   <Button key="btn_3" onClick={() => goMap()}>
-  //     map
-  //   </Button>
-  // ];
   return <Wrapper>{makeButtons()}</Wrapper>;
 };
 
