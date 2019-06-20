@@ -9,16 +9,22 @@ const Provider = ({ children }) => {
   const setMessage = name => {
     switch (name) {
       case "person_1":
-        setMessageText(`おう、よくきたな。`);
+        setMessageText(`なにか用かね?`);
         break;
       case "bye_1":
-        setMessageText(`じゃあな。`);
+        setMessageText(`おお、そうかい。`);
         break;
       case "person_2":
-        setMessageText(`虫取り大好き！`);
+        setMessageText(`ども`);
         break;
       case "bye_2":
-        setMessageText(`じゃあねー。`);
+        setMessageText(`ども`);
+        break;
+      case "person_3":
+        setMessageText(`やぁ`);
+        break;
+      case "bye_3":
+        setMessageText(`やぁ`);
         break;
       case "map":
         setMessageText(`クリックしてヒントを探してください`);
@@ -27,7 +33,6 @@ const Provider = ({ children }) => {
         break;
     }
   };
-
   return (
     <Context.Provider
       value={{

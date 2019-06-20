@@ -7,8 +7,27 @@ const Provider = ({ children }) => {
     switch (name) {
       case "person_1":
         setActionButtons([
-          { text: "こんにちは", nextMessage: "bye_1", nextAction: "bye" },
-          { text: "さようなら", nextMessage: "bye_1", nextAction: "bye" },
+          {
+            text: `英語を
+教えてください`,
+            nextMessage: "bye_1",
+            nextAction: "bye"
+          },
+          { text: "なんでもないです", nextMessage: "bye_1", nextAction: "bye" },
+          { text: "誰ですか？", nextMessage: "bye_1", nextAction: "bye" },
+          {
+            text: "戻る",
+            nextMessage: "map",
+            extAction: "map",
+            nextViewer: "map"
+          }
+        ]);
+        break;
+      case "person_2":
+        setActionButtons([
+          { text: "赤", nextMessage: "bye_2", nextAction: "bye" },
+          { text: "青", nextMessage: "bye_2", nextAction: "bye" },
+          { text: "黄", nextMessage: "bye_2", nextAction: "bye" },
           {
             text: "戻る",
             nextMessage: "map",
@@ -17,10 +36,14 @@ const Provider = ({ children }) => {
           }
         ]);
         break;
-      case "person_2":
+      case "person_3":
         setActionButtons([
-          { text: "へぇ", nextMessage: "bye_2", nextAction: "bye" },
-          { text: "私も！", nextMessage: "bye_2", nextAction: "bye" },
+          {
+            text: "いま何時ですか",
+            nextMessage: "bye_3",
+            nextAction: "bye"
+          },
+          { text: "なんでもいです", nextMessage: "bye_3", nextAction: "bye" },
           {
             text: "戻る",
             nextMessage: "map",

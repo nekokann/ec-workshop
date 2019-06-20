@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Clock from "../../images/clock.png";
 import Table from "../../images/table.png";
+import Chair from "../../images/chair.png";
 import Window from "../../contexts/Window";
 import Person from "../../contexts/Person";
 import Message from "../../contexts/Message";
@@ -38,6 +39,12 @@ const Map = () => {
     setAction("person_2");
     setViewerState("dialog");
   };
+  const setPerson3 = () => {
+    setPerson("person_3");
+    setMessage("person_3");
+    setAction("person_3");
+    setViewerState("dialog");
+  };
   return (
     <Wrapper>
       <Item
@@ -51,6 +58,12 @@ const Map = () => {
         onClick={() => setPerson2()}
         src={Table}
         alt="table"
+      />
+      <Item
+        style={{ bottom: "0px", left: "100px" }}
+        onClick={() => setPerson3()}
+        src={Chair}
+        alt="chair"
       />
     </Wrapper>
   );
