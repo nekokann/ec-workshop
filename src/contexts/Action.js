@@ -8,8 +8,7 @@ const Provider = ({ children }) => {
       case "person_1":
         setActionButtons([
           {
-            text: `英語を
-教えてください`,
+            text: "英語を教えてください",
             nextMessage: "bye_1",
             nextAction: "bye"
           },
@@ -18,7 +17,7 @@ const Provider = ({ children }) => {
           {
             text: "戻る",
             nextMessage: "map",
-            extAction: "map",
+            nextAction: "map",
             nextViewer: "map"
           }
         ]);
