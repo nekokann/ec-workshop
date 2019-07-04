@@ -26,6 +26,12 @@ const Provider = ({ children }) => {
       case "bye_3":
         setMessageText(`やぁ`);
         break;
+      case "person_4":
+        setMessageText(`げんき？`);
+        break;
+      case "bye_4":
+        setMessageText("じゃあね");
+        break;
       case "map":
         setMessageText(`クリックしてヒントを探してください`);
         break;

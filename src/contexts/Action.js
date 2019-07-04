@@ -51,6 +51,26 @@ const Provider = ({ children }) => {
           }
         ]);
         break;
+      case "person_4":
+        setActionButtons([
+          {
+            text: "はい",
+            nextMessage: "bye_3",
+            nextAction: "bye"
+          },
+          {
+            text: "いいえ",
+            nextMessage: "bye_3",
+            nextAction: "bye"
+          },
+          {
+            text: "戻る",
+            nextMessage: "map",
+            nextAction: "map",
+            nextViewer: "map"
+          }
+        ]);
+        break;
       case "bye":
         setActionButtons([
           {
