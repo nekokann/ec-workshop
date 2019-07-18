@@ -10,9 +10,30 @@ const Provider = ({ children }) => {
     switch (name) {
       case "person_1":
         setMessageText(`なにか用かね?`);
-        break;
+        break; 
+        case "person_1_a":
+        setMessageText(`どの英語を知りたいのかな？`);
+        break
+        case "person_1_b":
+        setMessageText(`星は英語でstarと言うんだよ`);
+        break
+        case "person_1_c":
+        setMessageText(`お金は英語でmanyと言うんだよ`);
+        break
+        case "person_1_d":
+        setMessageText(`三角は英語でtriangleと言うんだよ`);
+        break
+        case "person_1_e":
+        setMessageText(`水は英語でwaterと言うんだよ`);
+        break
+        case "person_1_f":
+        setMessageText(`魚は英語でfishと言うんだよ`);
+        break
       case "bye_1":
         setMessageText(`おお、そうかい。`);
+        break;
+        case "bye_1_a":
+        setMessageText(`自分から名乗らないとは失礼な！`);
         break;
       case "person_2":
         setMessageText(`ども`);
