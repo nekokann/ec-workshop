@@ -34,7 +34,7 @@ const Map = () => {
     setViewerState("dialog");
   };
   const setPerson2 = () => {
-    setPerson("person_2");
+    setPerson("person_2by");
     setMessage("person_2");
     setAction("person_2");
     setViewerState("dialog");

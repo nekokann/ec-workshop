@@ -20,6 +20,12 @@ const Provider = ({ children }) => {
       case "bye_2":
         setMessageText(`ども`);
         break;
+      case "bye_2rb":
+        setMessageText(`どぞ`);
+        break;
+      case "bye_2rb2":
+        setMessageText(`わーい(魚を手に入れた)`);
+        break;
       case "person_3":
         setMessageText(`やぁ`);
         break;

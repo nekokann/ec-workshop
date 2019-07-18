@@ -5,6 +5,7 @@ import Button from "./Button";
 import Window from "../../contexts/Window";
 import Message from "../../contexts/Message";
 import Action from "../../contexts/Action";
+import Person from "../../contexts/Person";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -17,6 +18,7 @@ const ActionArea = () => {
   const { setViewerState } = useContext(Window.Context);
   const { setMessage } = useContext(Message.Context);
   const { action, setAction } = useContext(Action.Context);
+  const { setPerson } = useContext(Person.Context);
 
   const makeButtons = () => {
     if (!action) return <></>;
@@ -27,6 +29,7 @@ const ActionArea = () => {
           if (a.nextMessage) setMessage(a.nextMessage);
           if (a.nextAction) setAction(a.nextAction);
           if (a.nextViewer) setViewerState(a.nextViewer);
+          if (a.nextPerson) setPerson(a.nextPerson);
         }}
       >
         {a.text}
