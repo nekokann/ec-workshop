@@ -13,7 +13,7 @@ import Action from "../../contexts/Action";
 const Wrapper = styled.div`
   width: 100%;
   height: 50%;
-  background-color: #eafaf6;
+  /* background-color: #eafaf6; */
   position: relative;
 `;
 

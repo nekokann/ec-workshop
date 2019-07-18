@@ -81,6 +81,37 @@ const Provider = ({ children }) => {
           }
         ]);
         break;
+      case "opening_1":
+        setActionButtons([
+          {
+            text: "次へ",
+            nextMessage: "opening_2",
+            nextAction: "opening_2",
+            nextPerson: "wani"
+          }
+        ]);
+        break;
+      case "opening_2":
+        setActionButtons([
+          {
+            text: "次へ",
+            nextMessage: "opening_3",
+            nextAction: "opening_3",
+            nextPerson: "niwatori"
+          }
+        ]);
+        break;
+      case "opening_3":
+        setActionButtons([
+          {
+            text: "ゲームスタート！",
+            nextMessage: "map",
+            nextAction: "map",
+            nextViewer: "map",
+            nextProgress: 2
+          }
+        ]);
+        break;
       case "map":
       default:
         setActionButtons([]);

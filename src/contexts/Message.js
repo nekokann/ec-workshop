@@ -32,6 +32,18 @@ const Provider = ({ children }) => {
       case "bye_4":
         setMessageText("じゃあね");
         break;
+      case "start":
+        setMessageText("脱出ゲームスタート！");
+        break;
+      case "opening_1":
+        setMessageText("うほうほ、うききー！");
+        break;
+      case "opening_2":
+        setMessageText("ワニニッ！ワニニニッ");
+        break;
+      case "opening_3":
+        setMessageText("コケーッ、コッコッコ！");
+        break;
       case "map":
         setMessageText(`クリックしてヒントを探してください`);
         break;
