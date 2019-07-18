@@ -9,17 +9,33 @@ const Provider = ({ children }) => {
         setActionButtons([
           {
             text: "英語を教えてください",
-            nextMessage: "bye_1",
-            nextAction: "bye"
+            nextMessage: "person_1_a",
+            nextAction: "person_1_2"
           },
-          { text: "なんでもないです", nextMessage: "bye_1", nextAction: "bye" },
-          { text: "誰ですか？", nextMessage: "bye_1", nextAction: "bye" },
+          { text: "誰ですか？", nextMessage: "bye_1_a", nextAction: "bye" },
           {
-            text: "戻る",
-            nextMessage: "map",
-            nextAction: "map",
-            nextViewer: "map"
+            text: "なんでもないです",
+            nextMessage: "bye_1",
+            nextAction: "bye",
           }
+        ]);
+        break;
+        case "person_1_2":
+        setActionButtons([
+          {
+            text: "英語で星",
+            nextMessage: "person_1_b",
+            nextAction: "person_1_2"
+          },
+          { text: "英語でお金", nextMessage: "person_1_c", nextAction: "person_1_2" },
+          {
+            text: "英語で三角",
+            nextMessage: "person_1_d",
+            nextAction: "person_1_2",
+          },
+          { text: "英語で水", nextMessage: "person_1_e", nextAction: "person_1_2" },
+          { text: "英語で魚", nextMessage: "person_1_f", nextAction: "person_1_2" },
+          { text: "十分です", nextMessage: "bye_1", nextAction: "bye" },
         ]);
         break;
       case "person_2":
