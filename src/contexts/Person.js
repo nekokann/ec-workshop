@@ -7,6 +7,11 @@ import Person2bb from "../images/person_2_bb.png";
 import Person2by from "../images/person_2_by.png";
 import Person2yy from "../images/person_2_yy.png";
 import Person3 from "../images/person_3.png";
+import Person4 from "../images/person_4.png";
+import Saru from "../images/saru.png";
+import Niwatori from "../images/niwatori.png";
+import Wani from "../images/wani.png";
+import Start from "../images/emblem.gif";
 
 const Context = createContext();
 const Provider = ({ children }) => {
@@ -37,6 +42,21 @@ const Provider = ({ children }) => {
 
       case "person_3":
         setPersonImage(Person3);
+        break;
+      case "person_4":
+        setPersonImage(Person4);
+        break;
+      case "saru":
+        setPersonImage(Saru);
+        break;
+      case "niwatori":
+        setPersonImage(Niwatori);
+        break;
+      case "wani":
+        setPersonImage(Wani);
+        break;
+      case "start":
+        setPersonImage(Start);
         break;
       default:
         break;

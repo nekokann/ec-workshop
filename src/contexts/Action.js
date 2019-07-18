@@ -9,17 +9,33 @@ const Provider = ({ children }) => {
         setActionButtons([
           {
             text: "英語を教えてください",
-            nextMessage: "bye_1",
-            nextAction: "bye"
+            nextMessage: "person_1_a",
+            nextAction: "person_1_2"
           },
-          { text: "なんでもないです", nextMessage: "bye_1", nextAction: "bye" },
-          { text: "誰ですか？", nextMessage: "bye_1", nextAction: "bye" },
+          { text: "誰ですか？", nextMessage: "bye_1_a", nextAction: "bye" },
           {
-            text: "戻る",
-            nextMessage: "map",
-            nextAction: "map",
-            nextViewer: "map"
+            text: "なんでもないです",
+            nextMessage: "bye_1",
+            nextAction: "bye",
           }
+        ]);
+        break;
+        case "person_1_2":
+        setActionButtons([
+          {
+            text: "英語で星",
+            nextMessage: "person_1_b",
+            nextAction: "person_1_2"
+          },
+          { text: "英語でお金", nextMessage: "person_1_c", nextAction: "person_1_2" },
+          {
+            text: "英語で三角",
+            nextMessage: "person_1_d",
+            nextAction: "person_1_2",
+          },
+          { text: "英語で水", nextMessage: "person_1_e", nextAction: "person_1_2" },
+          { text: "英語で魚", nextMessage: "person_1_f", nextAction: "person_1_2" },
+          { text: "十分です", nextMessage: "bye_1", nextAction: "bye" },
         ]);
         break;
       case "person_2":
@@ -175,6 +191,26 @@ const Provider = ({ children }) => {
           }
         ]);
         break;
+      case "person_4":
+        setActionButtons([
+          {
+            text: "はい",
+            nextMessage: "bye_3",
+            nextAction: "bye"
+          },
+          {
+            text: "いいえ",
+            nextMessage: "bye_3",
+            nextAction: "bye"
+          },
+          {
+            text: "戻る",
+            nextMessage: "map",
+            nextAction: "map",
+            nextViewer: "map"
+          }
+        ]);
+        break;
       case "bye":
         setActionButtons([
           {
@@ -185,7 +221,37 @@ const Provider = ({ children }) => {
           }
         ]);
         break;
-
+      case "opening_1":
+        setActionButtons([
+          {
+            text: "次へ",
+            nextMessage: "opening_2",
+            nextAction: "opening_2",
+            nextPerson: "wani"
+          }
+        ]);
+        break;
+      case "opening_2":
+        setActionButtons([
+          {
+            text: "次へ",
+            nextMessage: "opening_3",
+            nextAction: "opening_3",
+            nextPerson: "niwatori"
+          }
+        ]);
+        break;
+      case "opening_3":
+        setActionButtons([
+          {
+            text: "ゲームスタート！",
+            nextMessage: "map",
+            nextAction: "map",
+            nextViewer: "map",
+            nextProgress: 2
+          }
+        ]);
+        break;
       case "map":
       default:
         setActionButtons([]);
